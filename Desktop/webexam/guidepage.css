@@ -1,0 +1,100 @@
+/************* header image ************/
+#arena-bg {
+  background-image: url(guidepageimages/arena.PNG);
+}
+
+#story-bg {
+  background-image: url(guidepageimages/story.PNG);
+}
+
+#guild-bg {
+  background-image: url(guidepageimages/guild.PNG);
+}
+
+#event-bg {
+  background-image: url(guidepageimages/event.PNG);
+}
+
+#decor-bg {
+  background-image: url(guidepageimages/decor.png);
+}
+/************* header image ************/
+
+/************* notice 게시판 ************/
+
+.label-box {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 10px; /* 둥근 모서리 */
+  background-color: rgba(220, 59, 59, 0.2); /* 반투명 배경색 */
+  color: rgb(236, 35, 35); /* 텍스트 색상 */
+  font-weight: bold;
+}
+
+#title {
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit; /* 텍스트 색상을 부모 요소와 동일하게 설정 */
+  cursor: pointer; /* 링크 커서 유지 */
+}
+
+#title:hover {
+  color: rgb(235, 57, 12);
+}
+.title {
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 */
+  overflow: hidden; /* 넘친 내용은 숨김 */
+  text-overflow: ellipsis; /* 넘친 부분을 ...으로 표시 */
+  max-width: 20ch; /* 최대 20글자까지 표시 */
+  font-size: 14px;
+}
+
+.writeandsearchbutton{
+  width: 90%;
+}
+.table {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+  border-collapse: collapse;
+  
+}
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+}
+.table .title {
+  text-align: left;
+}
+.header {
+  background-color: rgb(218, 231, 255);
+}
+.btn-custom {
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: rgb(164, 199, 255);
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.btn-custom:hover {
+  background-color: rgb(68, 136, 244);
+  color: #fff;
+}
+
+/* 맨 아래 페이지 번호 써있는 네비게이션 */
+#pages {
+  display: flex;
+  justify-content: center; /* 항목 간 공간을 균등 배분 */
+  padding: 0; /* 기본 여백 제거 */
+  margin-left: 100px;
+  margin-right: 100px;
+  list-style: none; /* 불릿 포인트 제거 */
+  flex: 1; /* 각 항목이 동일한 크기를 가짐 */
+  text-align: center; /* 텍스트를 가운데 정렬 */
+}
+/************* notice 게시판 ************/
