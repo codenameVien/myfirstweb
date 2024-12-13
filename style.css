@@ -1,0 +1,114 @@
+/************** index.html **************/
+/************** navigation **************/
+.navstyle {
+  display: flex;
+  justify-content: space-between; /* 항목 간 공간을 균등 배분 */
+  padding: 0; /* 기본 여백 제거 */
+  margin-left: 100px;
+  margin-right: 100px;
+  flex: 1; /* 각 항목이 동일한 크기를 가짐 */
+  text-align: center; /* 텍스트를 가운데 정렬 */
+}
+.nav-link:hover {
+  color: rgb(235, 57, 12);
+}
+/************** navigation **************/
+
+/************** popup **************/
+.floating-popup {
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px;
+  z-index: 1050; /* 다른 요소 위에 표시 */
+  width: 200px; /* 팝업 이미지 너비 */
+}
+
+#chest .img:hover {
+  cursor: url("mainimages/Special\ Cookie\ Chest\ Open.png"), auto;
+}
+#chest .img img.hover {
+  display: none;
+}
+#chest .img:hover img {
+  display: none;
+}
+#chest .img:hover img.hover {
+  display: block;
+}
+
+/************** intro **************/
+/* 그 chest부분 hover도 추가함 */
+#kingdom-bg {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(mainimages/cookiekingdom.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#intro .section-in {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+#intro .img {
+  display: inline-block;
+  max-width: 500px;
+  margin: auto;
+  position: absolute
+  top: 50%;
+  left: 50%;
+  transform: translate(-65%, -50%);
+}
+
+#intro .img:hover {
+  cursor: url("mainimages/PinkBearJelly.png"), auto;
+}
+#intro .img img.hover, #chest .img img.click {
+  display: none;
+}
+#intro .img:hover img, #chest .img:hover img{
+  display: none;
+}
+#intro .img:hover img.hover, #chest .img:hover img.click {
+  display: block;
+}
+/************** intro **************/
+
+.characterimg-hover img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: all 0.3s ease; /* 부드러운 전환 효과 */
+}
+
+
+.characterimg-hover:hover img {
+  filter: brightness(50%); /* 마우스 오버 시 이미지가 어두워짐 */
+}
+
+/* https://blog.naver.com/kimsaeam/221441476981 */
+.characterimg-hover {
+  position: relative;
+}
+.imtext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.characterimg-hover:hover span {
+    opacity: 1; /* 마우스 오버 시 텍스트가 나타남 */
+  }
+

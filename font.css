@@ -1,0 +1,24 @@
+body,
+.noticefontexception {
+  font-family: "Dangrek", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.noticeboardfont {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: none;
+}
+
+.noticefontexceptionnoupper{
+  font-family: "Dangrek", serif;
+  font-weight: 400;
+  font-style:normal
+}
+
+.fontred{
+  color:rgb(235, 57, 12);
+}
