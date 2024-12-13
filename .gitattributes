@@ -1,0 +1,2 @@
+characterimages/* filter=lfs diff=lfs merge=lfs -text
+mainimages/* filter=lfs diff=lfs merge=lfs -text
